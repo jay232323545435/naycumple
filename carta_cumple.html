@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños Nay</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d1a;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      animation: backgroundFade 10s infinite alternate;
+    }
+
+    @keyframes backgroundFade {
+      from { background-color: #0d0d1a; }
+      to { background-color: #1a1a2e; }
+    }
+
+    .card {
+      background-color: rgba(30, 30, 60, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px #fff;
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .card p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .firma {
+      margin-top: 25px;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    audio {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="imagen.jpg" alt="Imagen de Nay">
+    <p>
+      ¡Feliz cumpleaños, criatura única e irrepetible (gracias al cielo, porque el mundo no está listo para una segunda versión tuya)!<br><br>
+      Hoy celebramos el día en que el universo cometió su mejor accidente afortunado y naciste tú. Y desde entonces, el caos ha tenido nombre propio: Nay. Entre sarcasmos, carcajadas y tus brillantes ideas que rozan lo ilegal pero nunca lo inmoral (bueno, casi nunca), nos has regalado momentos inolvidables.<br><br>
+      En este día especial, quiero desearte toda la felicidad que mereces… aunque, con tu historial kármico, eso probablemente sea una mezcla de pastel, memes rancios/bobos, y alguna conversación existencial a las 3 a.m. con una copa en la mano.<br><br>
+      Que nunca te falte el sarcasmo, los abrazos sinceros (de esos que parecen amenazas si duran mucho), y personas que te quieran tanto como te mereces (o que al menos disimulen bien). Sigue brillando con esa luz propia, oscura pero cálida, como una vela gótica en medio del apocalipsis.<br><br>
+      Gracias por existir, por ser quien eres, y por hacer de este mundo un lugar más interesante y mucho menos aburrido.
+    </p>
+    <div class="firma">
+      Con todo el cariño del bueno (y un poquito del tóxico, solo para que no te aburras),
+    </div>
+    <audio controls autoplay loop>
+      <source src="rm.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+</body>
+</html>
